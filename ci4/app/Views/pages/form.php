@@ -130,10 +130,13 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO jhong_myguests (name, email, website, comment, gender)
 VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
+// TODO: only execute if it succeeds all checks
+if ($gender != null) {
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
+}
 }
 
 $conn->close();
