@@ -11,11 +11,6 @@
 	</head>
 
 	<body>
-		<header>
-			<h1 id="introduction">Resources</h1>
-			<a href="./"><img class="avatar" src="id.jpg" alt="Home"></a>
-		</header>
-
 		<article>
 			<p>Code:</p>
 			<ul>
@@ -27,8 +22,5 @@
 				<li><a href="https://www.wikimedia.org/" target="_blank">Wikimedia</a></li>
 			</ul>
 		</article>
-
-		<footer><a href="./">Home</a><br>Source code available on <a href="https://github.com/justinclarkong/lab2/tree/main/week8">GitHub</a> &hearts;</footer>
-		<script src="scripts.js"></script>
 	</body>
 </html>

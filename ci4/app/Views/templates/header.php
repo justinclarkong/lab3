@@ -10,4 +10,4 @@ echo link_tag('css/styles.css');
 <body>
 
     <h1 id="introduction"><?= esc($title) ?></h1>
-<a href="./"><img class="avatar" src="images/id.jpg" alt="Home"></a>
+<a href="./home"><img class="avatar" src="images/id.jpg" alt="Home"></a>
