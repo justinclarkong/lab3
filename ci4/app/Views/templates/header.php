@@ -7,4 +7,4 @@
 <body>
 
     <h1 id="introduction"><?= esc($title) ?></h1>
-    <a href=<?= site_url('home') ?>><?= img(array('src'=>'images/id.jpg', 'alt'=>'Home', 'href'=>'/home', 'class'=>'avatar')) ?></a>
+    <a href=<?= base_url('home') ?>><?= img(array('src'=>'images/id.jpg', 'alt'=>'Home', 'href'=>'/home', 'class'=>'avatar')) ?></a>
