@@ -1,5 +1,6 @@
 <h2><?= esc($title) ?></h2>
 
+<article>
 <?= session()->getFlashdata('error') ?>
 <?= validation_list_errors() ?>
 
@@ -16,3 +17,4 @@
 
     <input type="submit" name="submit" value="Create news item">
 </form>
+</article>
