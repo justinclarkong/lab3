@@ -6,8 +6,6 @@
 		<meta name="author" content="Justin Clark Ong">
 		<meta name="description" content="All about me!">
 		<title>Resources</title>
-		<link href="favicon.ico" rel=icon>
-		<link rel="stylesheet" href="styles.css">
 	</head>
 
 	<body>

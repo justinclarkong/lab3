@@ -6,7 +6,6 @@
 		<meta name="author" content="Justin Clark Ong">
 		<meta name="description" content="What does the cow say?">
 		<title>&#128004;&#128172;</title>
-		<link href="favicon.ico" rel=icon>
 	</head>
 	<body>
 		<textarea placeholder="Moo!" id="input"></textarea>

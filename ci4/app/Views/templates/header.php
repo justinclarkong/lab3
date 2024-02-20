@@ -1,12 +1,10 @@
 <!doctype html>
 <html>
 <head>
-<?php
-echo link_tag('css/styles.css');
-?>
-
+<?= link_tag('css/styles.css') ?>
+<?= link_tag('favicon.ico', 'icon', 'image/ico') ?>
 </head>
 <body>
 
     <h1 id="introduction"><?= esc($title) ?></h1>
-<a href="./home"><img class="avatar" src="images/id.jpg" alt="Home"></a>
+    <a href=<?= site_url('home') ?>><?= img(array('src'=>'images/id.jpg', 'alt'=>'Home', 'href'=>'/home', 'class'=>'avatar')) ?></a>
