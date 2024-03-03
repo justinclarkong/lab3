@@ -17,6 +17,7 @@
             <?= esc($g['gender']) ?>
 	    <br>
         </div>
+        <p><a href="./guest/<?= esc($g['email'], 'url') ?>">View Guest</a></p>
 
     <?php endforeach ?>
 
