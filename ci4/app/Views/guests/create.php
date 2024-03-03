@@ -19,6 +19,6 @@
             <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other
             <br><br>
 
-	    <input type="submit" name="submit" value="Create guests item">
+	    <input type="submit" name="submit" value="Create guest item">
 	</form>
 </article>
