@@ -2,7 +2,7 @@
 	<?= session()->getFlashdata('error') ?>
 	<?= validation_list_errors() ?>
 	
-	<form action="../guest" method="post">
+	<form action="../guests" method="post">
 	    <?= csrf_field() ?>
             <h2>Sign the Guest Book!</h2>
             Name: <input type="text" name="name" value="<?= set_value('name') ?>">
@@ -19,6 +19,6 @@
             <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other
             <br><br>
 
-	    <input type="submit" name="submit" value="Create guest item">
+	    <input type="submit" name="submit" value="Create guests item">
 	</form>
 </article>

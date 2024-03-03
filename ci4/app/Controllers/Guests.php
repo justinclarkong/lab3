@@ -2,39 +2,39 @@
 
 namespace App\Controllers;
 
-use App\Models\GuestModel;
+use App\Models\GuestsModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Guests extends BaseController
 {
     public function index()
     {
-        $model = model(GuestModel::class);
+        $model = model(GuestsModel::class);
 
         $data = [
-            'guest'  => $model->getGuest(),
+            'guests'  => $model->getGuests(),
             'title' => 'Guest Logbook',
         ];
 
         return view('templates/header', $data)
-            . view('guest/index')
+            . view('guests/index')
             . view('templates/footer');
     }
 
     public function show($email = null)
     {
-        $model = model(GuestModel::class);
+        $model = model(GuestsModel::class);
 
-        $data['guest'] = $model->getGuest($email);
+        $data['guests'] = $model->getGuests($email);
 
-        if (empty($data['guest'])) {
+        if (empty($data['guests'])) {
             throw new PageNotFoundException('Cannot find the guest item: ' . $email);
         }
 
-        $data['title'] = $data['guest']['name'];
+        $data['title'] = $data['guests']['name'];
 
         return view('templates/header', $data)
-            . view('guest/view')
+            . view('guests/view')
             . view('templates/footer');
     }
 
@@ -43,7 +43,7 @@ class Guests extends BaseController
         helper('form');
 
         return view('templates/header', ['title' => 'Create a guest item'])
-            . view('guest/create')
+            . view('guests/create')
             . view('templates/footer');
     }
 
@@ -68,7 +68,7 @@ class Guests extends BaseController
         // Gets the validated data.
         $post = $this->validator->getValidated();
 
-        $model = model(GuestModel::class);
+        $model = model(GuestsModel::class);
 
         $model->save([
             'name' => $post['name'],
@@ -81,7 +81,7 @@ class Guests extends BaseController
         ]);
 
         return view('templates/header', ['title' => 'Create a guest item'])
-            . view('guest/success')
+            . view('guests/success')
             . view('templates/footer');
     }
 }
