@@ -1,1 +1,1 @@
-<p>Guest item created successfully.</p>
+<article><p>Guest item created successfully.</p></article>
