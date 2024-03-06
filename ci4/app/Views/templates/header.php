@@ -3,6 +3,7 @@
 <head>
 <?= link_tag('css/styles.css') ?>
 <?= link_tag('favicon.ico', 'icon', 'image/ico') ?>
+<title><?= esc($title) ?> </title>
 </head>
 <body>
 
