@@ -1,6 +1,7 @@
 <!--<h2><?= esc($title) ?></h2>-->
 
 <article>
+<a href="<?= base_url('guests/new') ?>">Add your own entry!</a>
 <?php if (! empty($guests) && is_array($guests)): ?>
 
     <?php foreach ($guests as $guest): ?>
