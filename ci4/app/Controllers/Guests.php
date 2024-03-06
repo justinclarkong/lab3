@@ -76,9 +76,9 @@ class Guests extends BaseController
             'website' => $post['website'],
             'comment' => $post['comment'],
             'gender' => $post['gender'],
-            //'email'  => url_title($post['title'], '-', true),
-            //'body'  => $post['body'],
         ]);
+
+	header("refresh: 3");
 
         return view('templates/header', ['title' => 'Create a guest item'])
             . view('guests/success')
