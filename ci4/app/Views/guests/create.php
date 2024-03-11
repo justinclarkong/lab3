@@ -2,7 +2,7 @@
 	<?= session()->getFlashdata('error') ?>
 	<?= validation_list_errors() ?>
 	
-	<form action="../guests" method="post">
+	<form action="<?= base_url('guests') ?>" method="post">
 	    <?= csrf_field() ?>
             <h2>Sign the Guest Book!</h2>
             Name: <input type="text" name="name" value="<?= set_value('name') ?>">
